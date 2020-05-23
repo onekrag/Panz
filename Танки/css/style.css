@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+}
+.main {
+  background-color: #1C1919;
+  background: url(../img/main_bg2.jpg) center center no-repeat;
+  text-align: center;
+}
+.main .fp-tableCell {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main__description {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+}
+.wrapper__btn {
+  display: flex;
+  align-items: center;
+}
+.main__btn {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: #df631e;
+}
+.slide__item {
+  background-color: #1C1919;
+  background: url(../img/slide1_bg4.jpg) center center no-repeat;
+  background-size: 117%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.slide__title {
+  font-size: 36px;
+  letter-spacing: 1.8px;
+}
+.slide__title span {
+  color: #df631e;
+}
+.slide__descr-list {
+  line-height: 46px;
+}
+.slide__descr-link {
+  color: #df631e;
+}
+.page__list {
+  text-align: right;
+}
+.page__number {
+  font-size: 24px;
+}
+.scrollpanel .sp-scrollbar {
+  width: 10px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.scrollpanel .sp-scrollbar .sp-thumb {
+  background-color: #df631e;
+  transition: height 0.2s ease-in-out;
+}
+.scrollpanel .sp-scrollbar.active .sp-thumb {
+  background-color: #999;
+}
