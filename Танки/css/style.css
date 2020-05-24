@@ -35,13 +35,16 @@ body {
   color: #df631e;
 }
 .slide__item {
+  position: relative;
   background-color: #1C1919;
   background: url(../img/slide1_bg4.jpg) center center no-repeat;
-  background-size: 117%;
+  background-size: cover;
   padding-left: 5%;
-  padding-right: 5%;
+  padding-right: 4%;
 }
 .slide__title {
+  margin-bottom: 30px;
+  height: 120px;
   font-size: 36px;
   letter-spacing: 1.8px;
 }
@@ -49,16 +52,64 @@ body {
   color: #df631e;
 }
 .slide__descr-list {
-  line-height: 46px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.slide__descr-list:first-child {
+  margin-top: 0;
 }
 .slide__descr-link {
   color: #df631e;
+}
+.slide2__link {
+  color: #df631e;
+}
+.langrage__box-eu,
+.langrage__box-na {
+  display: none;
+}
+.langrage__box-active {
+  display: block;
+  background-color: #fff;
+  color: #df631e;
+}
+.langrage__box {
+  position: absolute;
+  right: 36%;
+  width: 68px;
+  height: 50px;
+  background-color: #df631e;
+  font-size: 24px;
+  z-index: 10;
+}
+.langrage__box p {
+  display: block;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  width: 68px;
+  height: 50px;
+  line-height: 50px;
 }
 .page__list {
   text-align: right;
 }
 .page__number {
   font-size: 24px;
+}
+.division {
+  margin-left: 0;
+  width: 70%;
+  height: 6px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+.invitekod {
+  color: #df631e;
+}
+.invitekod:hover {
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 .scrollpanel .sp-scrollbar {
   width: 10px;
@@ -67,10 +118,53 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+.scrollpanel {
+  height: 57%;
+  max-width: 750px;
+}
 .scrollpanel .sp-scrollbar .sp-thumb {
   background-color: #df631e;
+  border-radius: 5px;
   transition: height 0.2s ease-in-out;
 }
 .scrollpanel .sp-scrollbar.active .sp-thumb {
   background-color: #999;
+}
+#my-accordion {
+  padding-right: 10%;
+}
+.toggler {
+  position: relative;
+  display: block;
+  padding: 10px;
+  border: 2px solid #9c7d7d;
+  border-radius: 5px;
+}
+.toggler::after {
+  content: url(../img/arr_down1.svg);
+  position: absolute;
+  right: 10px;
+  top: 40%;
+}
+.accordoin__wrapper {
+  margin-bottom: 20px;
+}
+.collapsible {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #df631e;
+  border-top: 1px solid #df631e;
+  border-radius: 0 0 5px 5px;
+}
+.jquery-accordion .toggler:hover {
+  background-color: #ffffff;
+  color: #df631e;
+  border-radius: 5px 5px 0 0;
+}
+.jquery-accordion .toggler:hover::after {
+  content: url(../img/arr_up.svg);
+  position: absolute;
+  right: 12px;
+  top: 30%;
 }
