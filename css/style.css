@@ -74,8 +74,14 @@ body {
   color: #df631e;
 }
 .langrage__box-eu,
-.langrage__box-na {
+.langrage__box-na,
+.slide__descr-eu,
+.slide__descr-na,
+.slide__descr-ru {
   display: none;
+}
+.slide__descr-active {
+  display: block;
 }
 .langrage__box-active {
   position: relative;

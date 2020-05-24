@@ -16,8 +16,21 @@
        $("#my-accordion").accordion();
     });
 
-
-    $('.langrage__box').click(function (event) {
+    $('.langrage__box-ru').click(function (event) {
        $('.langrage__box-eu,.langrage__box-na').toggleClass('langrage__box-active');
     });
+
+    $('.langrage__box-ru').click(function (event) {
+      $('.slide__descr-ru').addClass('slide__descr-active');
+      $('.slide__descr-eu, .slide__descr-na').removeClass('slide__descr-active');
+    });
+    $('.langrage__box-eu').click(function (event) {
+      $('.slide__descr-eu').addClass('slide__descr-active');
+      $('.slide__descr-ru, .slide__descr-na').removeClass('slide__descr-active');
+    });
+    $('.langrage__box-na').click(function (event) {
+      $('.slide__descr-na').addClass('slide__descr-active');
+      $('.slide__descr-ru, .slide__descr-eu').removeClass('slide__descr-active');
+    });
+
  })
