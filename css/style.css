@@ -73,8 +73,6 @@ body {
 .slide2__link {
   color: #df631e;
 }
-.langrage__box-eu,
-.langrage__box-na,
 .slide__descr-eu,
 .slide__descr-na,
 .slide__descr-ru {
@@ -83,42 +81,35 @@ body {
 .slide__descr-active {
   display: block;
 }
-.langrage__box-active {
-  position: relative;
-  display: block;
-  background-color: #fff;
-  color: #df631e;
-}
-.langrage__box-active:hover {
-  opacity: 0.7;
-}
-.langrage__box-active::after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 10px solid #ffffff;
-  top: -10px;
-  left: 28px;
-}
 .langrage__box {
   position: absolute;
-  right: 36%;
+  right: 16%;
   width: 68px;
   height: 50px;
-  background-color: #df631e;
   font-size: 24px;
   z-index: 10;
 }
 .langrage__box p {
-  margin: 0;
+  background-color: #df631e;
+  margin: 5px 0;
   text-align: center;
   cursor: pointer;
   width: 68px;
   height: 50px;
   line-height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+.langrage__box p:first-child {
+  margin-top: 0;
+}
+.langrage__box p:hover {
+  background: #ffffff;
+  color: #df631e;
+}
+p.langrage__box-active {
+  background-color: #fff;
+  color: #df631e;
 }
 .page__list {
   text-align: right;

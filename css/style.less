@@ -27,8 +27,8 @@ body {
 }
 
 .fp-controlArrow.fp-prev,
-.fp-controlArrow.fp-next{
-    &:hover{
+.fp-controlArrow.fp-next {
+    &:hover {
         opacity: 1;
     }
 }
@@ -85,8 +85,8 @@ body {
     background-color: #fff;
     border-radius: 5px;
 
-    &:hover{
-        box-shadow:0px 2px 10px 2px rgba(0,0,0,0.5);
+    &:hover {
+        box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -94,58 +94,50 @@ body {
     color: @primary_color;
 }
 
-.langrage__box-eu,
-.langrage__box-na,
 .slide__descr-eu,
 .slide__descr-na,
 .slide__descr-ru {
     display: none;
 }
 
-.slide__descr-active{
+.slide__descr-active {
     display: block;
-}
-
-.langrage__box-active {
-    position: relative;
-    display: block;
-    background-color: #fff;
-    color: @primary_color;
-
-    &:hover {
-        opacity: .7;
-    }
-
-    &::after {
-        position: absolute;
-        content: '';
-        width: 0;
-        height: 0;
-        border-left: 7px solid transparent;
-        border-right: 7px solid transparent;
-        border-bottom: 10px solid #ffffff;
-        top: -10px;
-        left: 28px;
-    }
 }
 
 .langrage__box {
     position: absolute;
-    right: 36%;
+    right: 16%;
     width: 68px;
     height: 50px;
-    background-color: @primary_color;
+
     font-size: 24px;
     z-index: 10;
 
     p {
-        margin: 0;
+        background-color: @primary_color;
+        margin: 5px 0;
         text-align: center;
         cursor: pointer;
         width: 68px;
         height: 50px;
         line-height: 50px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:hover {
+            background: #ffffff;
+            color: @primary_color;
+        }
     }
+}
+
+p.langrage__box-active {
+    background-color: #fff;
+    color: @primary_color;
 }
 
 .page__list {
